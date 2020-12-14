@@ -29,13 +29,13 @@ using System.Timers;
 
 namespace ConstructionSearchApi.Ignite
 {
-    public class IgniteThinClientService
+    public class IgniteThickClientTextQueryService
     {
         private readonly IgniteClientConfiguration _igniteClientConfiguration;
         private readonly string _endPoint;
         private readonly string[] _endPoints;
 
-        public IgniteThinClientService(string endPoint)
+        public IgniteThickClientTextQueryService(string endPoint)
         {
             var endpoints = new List<string>();
             if (endPoint.Contains(","))
